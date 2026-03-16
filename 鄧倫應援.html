@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Allen Deng Support Page</title>
+    <style>
+        body {
+            background-color: #000000; 
+            color: #ffffff;
+            font-family: 'Microsoft JhengHei';
+            display: flex;
+            flex-direction: column;/**豎排列**/
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #04f008; 
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+   
+        .card {
+            background:#000000;
+            border: 1px solid#04f008;
+            border-radius: 15px;
+            padding: 30px;/**內邊距**/
+            max-width: 600px;
+            text-align: center;
+        }
+
+
+        .image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;/**圓角**/
+            border: 4px solid#04f008;
+            object-fit: cover;/**自動裁切多餘部分**/
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            color: #ecf0f1;
+            line-height: 1.6;/**行距**/
+            margin:20px 0;
+        }
+
+
+        .message {
+            background: #e74c3c;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+
+        .btn {
+            margin-top: 30px;
+            background: transparent;
+            color: #04f008;
+            border: 2px solid  #04f008;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 20px;
+        }
+
+        .btn:hover {
+            background: #04f008;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>鄧倫應援站</h1>
+    
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="鄧倫" class="profile-img">
+        
+        <p class="quote">
+            「不管是在密室裡解謎的你，還是現實中努力的你，<br>
+            那些帶給我們的快樂，永遠不會被抹滅。」
+        </p>
+        
+        <div class="message">無論如何，我永遠支持你！</div>
+        
+        <br>
+        <button class="btn" onclick="cheer()">點擊發送應援能量</button>
+    </div>
+
+    <script>
+        function cheer() {
+            alert("加油！應援能量已傳送！一起祈禱倫哥早日復出！");
+        }
+    </script>
+
+
+</body>
+</html>
